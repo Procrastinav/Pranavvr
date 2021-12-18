@@ -2,10 +2,13 @@ from abc import ABC, abstractmethod
 
 
 class Observable(ABC):
+    # will be inherited by eyeOfSauron
+    def __init__(self):
+        self.observers_list = []
 
-    @abstractmethod
+    # will be inherited by eyeOfSauron. Do not make abstract method
     def add_observer(self, observer):
-        pass
+        self.observers_list.append(observer)
 
     @abstractmethod
     def remove_observer(self, observer):

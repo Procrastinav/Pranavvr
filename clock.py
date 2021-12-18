@@ -73,6 +73,14 @@ class Clock:
     def __repr__(self):
         return "%s %s, hour: %s, minute: %s, second: %s" % (self.__hour, self.__minute, self.__second)
 
+# This is what I have:
+    # def __str__(self):
+    #     return f'{self.__hour}:{self.__minute}:{self.__second}'
+
+    # def __repr__(self):
+    #     return f'{self.__hour}:{self.__minute}:{self.__second}'
+
+
     def __eq__(self, other):
         if isinstance(other, Clock):
             return self.__hour == other.hour() and self.__minute == other.minute() and self.__second == other.second()

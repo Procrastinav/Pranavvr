@@ -3,12 +3,12 @@ from observable import Observable
 
 class EyeOfSauron(Observable):
 
-    def __init__(self, observer):
-        self.observer = []
-        self.observer = observer
+    # def __init__(self): #delete observer in param) __init__ inherited
+        # delete, already inherited from Observable: self.observer = []
+        # delete self.observer = observer
 
-    def add_observer(self, observer):
-        self.observer.append(observer)
+    # delete (already inherited) def add_observer(self, observer):
+    #     self.observer.append(observer)
 
     def remove_observer(self, observer):
         self.observer.remove(observer)
